@@ -11,8 +11,8 @@ base_path = '/content/drive/MyDrive/universidad/9 semestre/Análisis IA/Eco ride
 
 # Load the models and preprocessors
 try:
-    churn_model = joblib.load(os.path.join(base_path, 'modelo pred churn.joblib'))
-    preprocessor_ohe = joblib.load(os.path.join(base_path, 'preprocessor_ohe.joblib'))
+    churn_model = joblib.load('modelo pred churn.joblib')
+    preprocessor_ohe = joblib.load('preprocessor_ohe.joblib')
     st.success("Modelos y preprocesadores cargados correctamente.")
 except Exception as e:
     st.error(f"Error cargando modelos o preprocesadores: {e}")
